@@ -32,10 +32,23 @@
     SKELETON
 -------------------------------------------------------------------*/
 body {
-  color: #666666;
-  font-size: 15px;
+  color: #1a1a1d;
+  font-size: 25px;
   font-family: "Quattrocento Sans", sans-serif;
   line-height: 1.80857;
+  overflow-x: hidden;
+}
+
+body {
+  font-size: 25px;
+  font-family: sans-serif;
+}
+
+.imglogo {
+  height: 100px;
+  position: relative;
+  left: 10%;
+  border: 5px solid black;
 }
 
 html {
@@ -43,7 +56,7 @@ html {
 }
 
 main {
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
   z-index: 999;
 }
@@ -67,7 +80,7 @@ h6 {
   letter-spacing: 0;
   font-weight: normal;
   position: relative;
-  padding: 0 0 10px 0;
+
   font-weight: normal;
   line-height: 120% !important;
   color: #1f1f1f;
@@ -109,6 +122,7 @@ h5 a:hover,
 h6 a:hover {
   opacity: 0.8;
 }
+
 a {
   color: #1f1f1f;
   text-decoration: none;
@@ -181,7 +195,7 @@ p {
 /*------------------------------------------------------------------ HEADER -------------------------------------------------------------------*/
 .main-top {
   background: #010101;
-  padding: 10px 0px;
+  padding: 2px 0px;
 }
 .custom-select-box {
   float: right;
@@ -211,7 +225,7 @@ p {
   display: inline-block;
   width: 0;
   height: 0;
-  margin-lpxeft: 0.255em;
+  margin-left: 0.255em;
   vertical-align: 0.255em;
   content: "";
   border-top: 0.3em solid;
@@ -244,7 +258,7 @@ p {
   color: #ffffff;
 }
 .right-phone-box p a:hover {
-  color: #d33b33;
+  color: #3500d3;
 }
 .offer-box,
 .slide {
@@ -280,19 +294,18 @@ p {
   font-size: 14px;
 }
 .our-link ul li a:hover {
-  color: #d33b33;
+  color: #3500d3;
 }
 
 .our-link ul li:last-child {
   border: none;
 }
-.main-header {
-}
+
 .search a {
   color: #d33b33;
 }
 .attr-nav > ul > li > a:hover {
-  color: #d33b33;
+  color: #3500d3;
 }
 nav.navbar.bootsnav ul.nav > li > a {
   margin: 0px;
@@ -300,7 +313,8 @@ nav.navbar.bootsnav ul.nav > li > a {
 /* Navbar Adjusment =========================== */
 /* Navbar Atribute ------*/
 .attr-nav > ul > li > a {
-  padding: 28px 15px;
+  padding: 5px;
+  position: relative;
 }
 ul.cart-list > li.total > .btn {
   border-bottom: solid 1px #cfcfcf !important;
@@ -313,7 +327,6 @@ ul.cart-list > li.total > .btn {
 @media (min-width: 1024px) {
   /* Navbar General ------*/
   nav.navbar ul.nav > li > a {
-    padding: 30px 15px;
     font-weight: 600;
   }
   nav.navbar .navbar-brand {
@@ -375,6 +388,7 @@ ul.cart-list > li.total > .btn {
     color: #eee;
   }
 }
+
 @media (max-width: 992px) {
   /* Navbar General ------*/
   nav.navbar .navbar-brand {
@@ -500,22 +514,22 @@ nav.navbar-inverse.navbar-full .navbar-toggle {
 nav.navbar.bootsnav ul.nav > li > a {
   position: relative;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 25px;
   color: #010101;
 
-  padding-right: 50px;
+  padding-right: 30px;
 }
 nav.navbar.bootsnav ul.nav li.active > a {
-  color: #d33b33;
+  color: #3500d3;
 }
 nav.navbar.bootsnav ul.nav li.active > a:hover {
-  color: #d33b33;
+  color: #3500d3;
 }
 nav.navbar.bootsnav ul.nav li > a:hover {
-  color: #d33b33;
+  color: #3500d3;
 }
 nav.navbar.bootsnav ul.nav li.megamenu-fw > a:hover {
-  color: #d33b33;
+  color: #3500d3;
 }
 @media (min-width: 1024px) {
   nav.navbar.navbar-inverse ul.nav .dropdown-menu {
@@ -614,6 +628,9 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu {
   left: auto;
 }
 
+.show {
+  display: block;
+}
 .cart-list h6 a {
   font-size: 16px;
   font-weight: 700;
@@ -636,7 +653,7 @@ ul.cart-list p .price {
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   position: relative;
-  background: #d33b33;
+  background-color: #3500d3;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.3s;
@@ -652,7 +669,7 @@ ul.cart-list p .price {
   bottom: 0;
   left: 0;
   right: 0;
-  background: #010101;
+  background: #3500d3;
   -webkit-transform: scaleY(0);
   transform: scaleY(0);
   -webkit-transform-origin: 50%;
@@ -804,8 +821,8 @@ ul.cart-list > li.total > .btn:hover {
   border: 2px solid #ffffff;
 }
 .slides-pagination a.current {
-  background: #d33b33;
-  border: 2px solid #d33b33;
+  background: #282828;
+  border: 2px solid #282828;
 }
 .cover-slides p a {
   font-size: 24px;
@@ -860,25 +877,77 @@ ul.cart-list > li.total > .btn:hover {
   padding: 8px 0px;
 }
 /*--------------------------------------------------------Main content after image slider-----------------------------------------------------------------------------------------------------*/
+
+.logo {
+  width: 20vw;
+  font-family: "Ranchers", cursive;
+  font-weight: 700;
+  position: relative;
+  left: 12%;
+  font-size: 1.6em;
+  letter-spacing: 2px;
+}
+
+@keyframes logotitle {
+  0% {
+    position: relative;
+    left: 0%;
+  }
+  50% {
+    position: relative;
+    left: 5%;
+  }
+  100% {
+    position: relative;
+    left: 0%;
+  }
+}
+
+@keyframes automotive {
+  0% {
+    position: relative;
+    right: 0%;
+  }
+  50% {
+    position: relative;
+    right: 5%;
+  }
+  100% {
+    position: relative;
+    right: 0%;
+  }
+}
+
 .banner {
-  width: 89vw;
+  width: 84.1vw;
   height: 12vh;
-  background-color: #111;
+  background-image: linear-gradient(#240090, rgb(28, 159, 202));
   text-transform: uppercase;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.banner p,
-.feedback p {
-  font-size: 3em;
+.banner p {
+  font-size: 2em;
+}
+
+.categ-books {
+  width: 100%;
+  height: 100vh;
+
+  color: whitesmoke;
 }
 
 .books-category {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../images/lightbg.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
-  height: 50vh;
-  background-color: whitesmoke;
+  height: 70vh;
+
   z-index: 11;
   clip-path: polygon(
     0% 10%,
@@ -895,10 +964,70 @@ ul.cart-list > li.total > .btn:hover {
 .books-panel {
   width: 100%;
   height: 77%;
+  display: flex;
+}
+
+.category-column {
+  width: 25vw;
+  height: 100%;
+}
+
+.sidebar {
+  position: relative;
+  left: 14%;
+  top: 25%;
+  width: 21.9vw;
+  height: 52%;
+  background: #042331;
+  padding: 5px;
+}
+
+.sidebar header {
+  font-size: 30px;
+  font-family: "Lobster", cursive;
+  color: white;
+  text-align: center;
+  line-height: 40px;
+
+  background: #063146;
+  user-select: none;
+}
+
+.sidebar ul a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  margin-top: 5px;
+  font-size: 20px;
+  color: white;
+  padding-left: 30px;
+  box-sizing: border-box;
+
+  transition: 0.5s;
+}
+
+.sidebar ul li:hover a {
+  padding-left: 50px;
+  background-color: orangered;
+}
+
+.sidebar ul a i {
+  margin-right: 16px;
+}
+
+.books {
+  width: 55vw;
+  height: 100%;
+}
+.gif-holder {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
 }
 
 .feedback {
-  background-color: rgb(48, 20, 10);
+  background-image: linear-gradient(rgb(28, 159, 202), #240090);
   text-transform: uppercase;
   color: whitesmoke;
   width: 100%;
@@ -908,6 +1037,118 @@ ul.cart-list > li.total > .btn:hover {
   justify-content: center;
   align-items: center;
 }
+.feedback p {
+  font-size: 1.8em;
+  font-family: "Anton", sans-serif;
+  word-spacing: 5px;
+  letter-spacing: 2px;
+}
+
+.apps-email {
+  background-image: url(../images/watercolor2.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  margin: 0 auto;
+  height: 30vh;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.email-design {
+  width: 55vw;
+  height: 100%;
+  position: relative;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 20% 100%, 20% 80%);
+}
+
+/*clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 30% 100%, 30% 80%);*/
+.email-design #subscribe {
+  height: 80%;
+  background-color: purple;
+  color: whitesmoke;
+  font-family: "Lobster", cursive;
+}
+
+.email-design #email-bar {
+  width: auto;
+  height: 20%;
+  background-color: greenyellow;
+}
+
+.email-box {
+  height: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.55em;
+  display: flex;
+  position: relative;
+  left: 25%;
+  padding: 5px 0 0 0;
+}
+
+.email-box i {
+  font-size: 20px;
+  text-align: center;
+  background: black;
+  color: whitesmoke;
+  width: 40px;
+  line-height: 40px;
+}
+.publishing {
+  display: inline;
+}
+
+.subtitle {
+  margin-left: 165px;
+  font-size: 2em;
+}
+.subpara {
+  margin-left: 145px;
+  font-size: 1.2em;
+  line-height: 25px;
+  position: relative;
+  top: 5%;
+}
+
+@keyframes colortoggle {
+  0% {
+    color: white;
+  }
+  50% {
+    color: yellow;
+  }
+  100% {
+    color: white;
+  }
+}
+
+.headerImage {
+  width: 700px;
+  height: 100%;
+
+  clip-path: polygon(0% 0%, 75% 0%, 100% 80%, 100% 100%, 0% 100%, 0% 80%);
+}
+
+.typeit {
+  animation: typing 5s steps(51);
+
+  overflow: hidden;
+  white-space: nowrap;
+
+  transition: ease-in;
+}
+
+@keyframes typing {
+  0% {
+    width: 0ch;
+  }
+  100% {
+    width: 44ch;
+  }
+}
 
 /*------------------------------------------------------------------ Footer Main -------------------------------------------------------------------*/
 .footer-main {
@@ -916,7 +1157,7 @@ ul.cart-list > li.total > .btn:hover {
 }
 .footer-widget h4 {
   color: #ffffff;
-  font-size: 16px;
+  font-size: 20px;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 20px;
@@ -934,8 +1175,9 @@ ul.cart-list > li.total > .btn:hover {
 }
 .footer-widget p {
   color: #cccccc;
-  font-weight: 400;
-  font-size: 14px;
+  font-weight: 200;
+  line-height: 142%;
+  font-size: 18px;
   padding-bottom: 20px;
 }
 .footer-widget ul {
@@ -958,11 +1200,10 @@ ul.cart-list > li.total > .btn:hover {
   color: #d33b33;
   border-color: #d33b33;
 }
-.footer-link {
-}
+
 .footer-link h4 {
   color: #ffffff;
-  font-size: 16px;
+  font-size: 20px;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 20px;
@@ -1017,7 +1258,7 @@ ul.cart-list > li.total > .btn:hover {
 }
 .footer-link-contact h4 {
   color: #ffffff;
-  font-size: 16px;
+  font-size: 20px;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 20px;
@@ -1797,8 +2038,7 @@ ul.cart-list > li.total > .btn:hover {
 .service-icon i {
   font-size: 34px;
 }
-.my-account-page a:hover i {
-}
+
 .service-desc p {
   font-size: 16px;
 }
